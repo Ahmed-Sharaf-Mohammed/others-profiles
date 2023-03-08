@@ -20,16 +20,8 @@ body {
 
 .heading {
     background-color: var(--primary-color);
-    padding: 75px 0;
+    padding: 30px;
     margin-bottom: 20px;
-}
-
-.heading h1 {
-    margin: auto;
-    width: fit-content;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    color: white;
 }
 
 @media (max-width: 768px) {
@@ -224,5 +216,74 @@ body {
     .box0 .info p {
         text-align: center;
         margin: 15px 0;
+    }
+}
+
+.heading form {
+    background-color: #C2EDCE;
+    border-radius: 150px;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.heading form i {
+    padding: 10px;
+    color: var(--gray-color);
+}
+
+.heading form:hover i {
+    color: var(--secondary-color);
+}
+
+.heading form input[type="search"] {
+    flex: 1;
+    min-width: 0;
+    background-color: #C2EDCE;
+    border: none;
+    outline: none;
+    padding: 0px 5px;
+}
+
+.heading form input[type="submit"] {
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 150px;
+    padding: 15px;
+    font-weight: 700;
+    border: none;
+}
+
+.heading form input[type="submit"]:hover {
+    background-color: green;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .heading {
+        padding: 35px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading {
+        padding: 75px 25px;
+    }
+    .heading form {
+        padding: 5px;
+    }
+    .heading form i {
+        font-size: 10px;
+    }
+    .heading form input[type="search"] {
+        padding: 0;
+    }
+    .heading form input::placeholder {
+        font-size: 10px;
+    }
+    .heading form input[type="submit"] {
+        font-size: 10px;
+        padding: 9px;
     }
 }
