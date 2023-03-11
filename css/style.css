@@ -197,13 +197,12 @@ body {
         width: 275px;
     }
     .box0 .info {
-        width: 575px;
+        width: 488px;
     }
     .box0 .info h1 {
         font-size: 25px;
     }
     .box0 .info p {
-        text-align: center;
         font-size: 14px;
     }
 }
@@ -212,9 +211,9 @@ body {
     .box0 {
         padding: 25px;
         gap: 20px;
+        width: 430px;
     }
     .box0 .info p {
-        text-align: center;
         margin: 15px 0;
     }
 }
